@@ -1,1 +1,60 @@
-#Will hold constants used throughout program(long press, double tap, selection timeout).
+#Will hold constants used throughout program
+
+from pathlib import Path
+
+#WHEEL
+WHEEL_POLLING_HZ = 150
+WHEEL_REVERSE = False
+WHEEL_IGNORE_TIME_MS = 30
+WHEEL_SMOOTHING_SAMPLES = 15
+WHEEL_ANGLE_DEG = 15
+WHEEL_SPEED_SENS = .001
+WHEEL_DEADZONE_DEG_SEC = 2
+WHEEL_COAST_BACK_SEC = 2
+
+#BUTTONS
+BUTTON_DEBOUNCE_MS = 20
+LONG_PRESS_MS = 500
+DOUBLE_TAP_WINDOW_MS = 300
+SELECTION_TIMEOUT_MS = 7500
+
+#SWITCH
+SWITCH_DEBOUNCE_MS = 30
+SWITCH_RAMP_RATE_SECOND = 0.25
+
+#HAPTICS
+HAPTICS_ENABLED = True
+HAPTIC_EFFECT_SELECT_CLICK = 4
+HAPTIC_EFFECT_CONFIRM = 1
+HAPTIC_EFFECT_CANCEL = 10
+HAPTIC_EFFECT_TIMEOUT = 10
+
+
+#OLED(Pending as I haven't bought it)
+OLED_CHIP = "SSD1306"
+
+#SONG
+MAX_SPEED = 3
+MIN_SPEED = .25
+
+#PINS
+PIN_PLAY = 5 #physical pin 29
+PIN_PAUSE = 6 #physical pin 31
+PIN_REC = 22 #physical pin 15
+PIN_MISC1 = 23 #physical pin 16
+PIN_MISC2 = 24 #physical pin 18
+PIN_SWITCH_UP = 25 #physical pin 22
+PIN_SWITCH_DOWN = 27 # physical pin 13
+
+#I2C
+
+I2C_WHEEL = 0x36
+I2C_OLED = 0x3C
+I2C_HAPTICS = 0x5A
+I2C_AUDIO = 0x1A
+
+#PATHS
+
+PATH_MUSIC = Path.home() / "MP3-Music"
+PATH_RECORDINGS = PATH_MUSIC/ "recordings"
+PATH_PLAYLISTS = PATH_MUSIC/"playlists"
