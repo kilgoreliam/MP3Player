@@ -1,0 +1,1 @@
+#Will hold constants used throughout program(long press, double tap, selection timeout).

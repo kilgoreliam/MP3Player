@@ -1,0 +1,1 @@
+#the different modes(normal,song select, playlist select)
